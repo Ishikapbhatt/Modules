@@ -1,19 +1,19 @@
-variable "ami_id" {
-  description = "AMI ID for the EC2 instance"
+variable "vpc_cidr" {
+  description = "CIDR block for the VPC"
   type        = string
 }
 
-variable "instance_type" {
-  description = "Instance type for the EC2 instance"
+variable "public_subnet_cidr" {
+  description = "CIDR block for the public subnet"
   type        = string
 }
 
-variable "public_subnet_id" {
-  description = "ID of the public subnet"
+variable "private_subnet_cidr" {
+  description = "CIDR block for the private subnet"
   type        = string
 }
 
-variable "ec2_name" {
-  description = "Name of the EC2 instance"
+variable "vpc_name" {
+  description = "Name of the VPC"
   type        = string
 }
